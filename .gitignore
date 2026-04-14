@@ -26,3 +26,7 @@ yarn-error.log*
 # IDE
 .vscode/
 .idea/
+
+# Local extras
+New folder/
+New folder.zip
