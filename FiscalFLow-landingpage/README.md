@@ -23,4 +23,7 @@ If you are developing a production application, we recommend using TypeScript wi
 * express.js
 * mongodb
 * python
-* XGBoost 
+* XGBoost
+
+---
+I used mongodb Compass localhost setup no deployment.
