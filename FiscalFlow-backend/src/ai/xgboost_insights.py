@@ -11,7 +11,7 @@ def safe_sum(items):
             pass
     return total
 
-
+# top categories sections
 def top_categories(items, limit=3):
     agg = {}
     for item in items:
@@ -25,6 +25,7 @@ def top_categories(items, limit=3):
     return ranked[:limit]
 
 
+# AI diagnostics output 
 def fallback_insights(payload):
     earnings = payload.get("earnings", [])
     savings = payload.get("savings", [])
@@ -127,6 +128,8 @@ def run_xgboost(payload):
                 f"XGBoost flags risk of under-saving (score {round(float(pred), 2)}). Try saving about {round(needed, 2)} more this cycle."
             )
 
+    # top expenditure category 
+    
     top_exp = top_categories(expenditures, 3)
     if top_exp:
         cat, amt = top_exp[0]
