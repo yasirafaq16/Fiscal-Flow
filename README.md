@@ -183,6 +183,26 @@ Open your browser and navigate to: `http://localhost:5173`
 
 ---
 
+## 🌐 REST API Reference
+
+All requests must include a `Content-Type: application/json` header. Protected routes require a valid JWT token sent in the `Authorization` header using the Bearer scheme:
+`Authorization: Bearer <your_jwt_token>`
+
+### Authentication Endpoints
+
+#### Register a New User
+* **Endpoint:** `POST /api/auth/register`
+* **Auth Required:** No
+* **Request Body:**
+  ```json
+  {
+    "username": "johndoe",
+    "email": "john@example.com",
+    "password": "SecurePassword123"
+  }
+  
+  ---
+
 ## 🗄 Database Schema
 
 ### Transaction Collection
